@@ -1,0 +1,96 @@
+/** {*/
+
+/*}*/
+
+.site-header {
+    padding: 0;
+    margin: 0;
+    top: 0;
+    width: 100%;
+    height: 100px;
+    background: #ffffff;
+    /*display: flex;*/
+    /*align-items: center;*/
+    position: fixed;
+    /*!*float: left;*!*/
+    /*justify-content: space-between;*/
+}
+
+.site-header .content-header {
+    width: 85%;
+    margin: 0 auto;
+    /*padding-left: 143px;*/
+    /*padding-right: 143px;*/
+    display: flex;
+    align-items: center;
+    /*float: left;*/
+    justify-content: space-between;
+}
+
+/*----------------------Site-title--------------*/
+.site-header .site-title {
+    width: 25%;
+    display: flex;
+    line-height: 92px;
+    font-family: 'Roboto', sans-serif;
+    /*margin-top: 16px;*/
+    /*margin-left: 143px;*/
+}
+
+.site-header .site-title .logo {
+    width: 69px;
+    height: 60px;
+    padding-top: 16px;
+    /*margin-left: 143px;*/
+    /*margin-top: 16px;*/
+}
+
+.site-header .site-title div {
+    margin-right: 13px;
+}
+
+.site-header .site-title .text a {
+    /*top: 27px;*/
+    /*vertical-align: center;*/
+    text-decoration: none;
+    font-family: Roboto, serif;
+    font-style: normal;
+    font-size: 32px;
+    /*line-height: 37px;*/
+    color: #000000;
+}
+
+/*---------------------Navigation------------------------*/
+.site-header .navigation {
+    width: 50%;
+    text-align: center;
+    top: 34px;
+    display: flex;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.site-header .navigation div {
+    margin: auto;
+    /*width: 25%;*/
+}
+
+.site-header .navigation a {
+    text-decoration: none;
+    font-family: Source Sans Pro, serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    color: #000000;
+}
+
+/*-----------------------Social-----------------*/
+.site-header .social {
+    width: 25%;
+}
+
+.site-header .social a {
+    color: #7A7A7A;
+    text-decoration: none;
+    float: right;
+    margin-right: 15px;
+}
