@@ -9,11 +9,13 @@ body {
 
 .container-body {
     width: 1920px;
-    height: 1080px;
+    /*height: 1080px;*/
+    /*width: 100%;*/
+    /*height: 100%;*/
 }
 
 .content-content {
-    width: 100%;
+    /*width: 100%;*/
     margin: 132px 143px 64px;
     display: flex;
 }
@@ -60,7 +62,12 @@ body {
 
 .content-content .news-month {
     /*width: 30%;*/
+    width: 421px;
     height: 663px;
+}
+
+.content-content .news-month p {
+    text-align: center;
 }
 
 .content-content .news-month img {
@@ -71,4 +78,11 @@ body {
 
 .content-content .news-month .month {
     font-weight: bold;
+    margin-top: 2px;
+}
+
+.content-content .news-month .text {
+    margin-top: 5px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: lighter;
 }

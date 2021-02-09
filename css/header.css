@@ -83,6 +83,11 @@
     color: #000000;
 }
 
+/*.site-header .navigation a:hover {*/
+/*    color: #4b4b4b;*/
+/*    transition: .2s;*/
+/*}*/
+
 /*-----------------------Social-----------------*/
 .site-header .social {
     width: 25%;
@@ -93,4 +98,10 @@
     text-decoration: none;
     float: right;
     margin-right: 15px;
+    transition: .2s;
+}
+
+.site-header .social a:hover {
+    color: #979797;
+    transition: .2s;
 }
