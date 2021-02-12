@@ -7,7 +7,8 @@
     margin: 0;
     top: 0;
     width: 100%;
-    height: 100px;
+    /*height: 100px;*/
+    height: 9.26%;
     background: #ffffff;
     /*display: flex;*/
     /*align-items: center;*/
@@ -31,22 +32,27 @@
 .site-header .site-title {
     width: 25%;
     display: flex;
-    line-height: 92px;
+    /*line-height: 92px;*/
+    line-height: 92%;
     font-family: 'Roboto', sans-serif;
     /*margin-top: 16px;*/
     /*margin-left: 143px;*/
 }
 
 .site-header .site-title .logo {
-    width: 69px;
-    height: 60px;
-    padding-top: 16px;
+    /*width: 69px;*/
+    width: 3.59%;
+    /*height: 60px;*/
+    height: 65.22%;
+    /*padding-top: 16px;*/
+    padding-top: 17.39%;
     /*margin-left: 143px;*/
     /*margin-top: 16px;*/
 }
 
 .site-header .site-title div {
-    margin-right: 13px;
+    /*margin-right: 13px;*/
+    margin-right: 14.13%;
 }
 
 .site-header .site-title .text a {
@@ -55,7 +61,8 @@
     text-decoration: none;
     font-family: Roboto, serif;
     font-style: normal;
-    font-size: 32px;
+    /*font-size: 32px;*/
+    font-size: 34.78%;
     /*line-height: 37px;*/
     color: #000000;
 }
@@ -64,7 +71,8 @@
 .site-header .navigation {
     width: 50%;
     text-align: center;
-    top: 34px;
+    /*top: 34px;*/
+    top: 34%;
     display: flex;
     font-family: 'Source Sans Pro', sans-serif;
 }

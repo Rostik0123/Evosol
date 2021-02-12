@@ -8,15 +8,16 @@ body {
 }
 
 .container-body {
-    width: 1920px;
+    /*width: 1920px;*/
     /*height: 1080px;*/
-    /*width: 100%;*/
+    width: 100%;
     /*height: 100%;*/
 }
 
 .content-content {
     /*width: 100%;*/
-    margin: 132px 143px 64px;
+    /*margin: 132px 143px 64px;*/
+    margin: 6.875% 7.45% 3.33%;
     display: flex;
 }
 
@@ -24,30 +25,39 @@ body {
     text-decoration: none;
     color: #000000;
     font-family: 'Source Sans Pro', sans-serif;
-    font-size: 20px;
+    /*font-size: 20px;*/
+    font-size: 0.8em;
 }
 
 .content-content .news-other {
     /*width: 70%;*/
-    width: 1213px;
+    /*width: 1213px;*/
+    width: 63.18%;
     display: flex;
     flex-wrap: wrap;
 }
 
 .content-content .news-latest {
-    width: 446px;
-    height: 316px;
-    margin-right: 160px;
-    margin-top: 31px;
+    /*width: 446px;*/
+    width: 36.78%;
+    /*height: 316px;*/
+    height: 29.26%;
+    /*margin-right: 160px;*/
+    margin-right: 13.19%;
+    /*margin-top: 31px;*/
+    margin-top: 2.87%;
 }
 
 .content-content .news-latest img {
-    width: 446px;
-    height: 229px;
+    /*width: 446px;*/
+    /*height: 229px;*/
+    width: 100%;
+    height: 72.47%;
 }
 
 .content-content .news-latest p {
-    margin-top: 2px;
+    /*margin-top: 2px;*/
+    margin-top: 0.63%;
 }
 
 .content-content .news-latest .new {
@@ -55,15 +65,18 @@ body {
 }
 
 .content-content .news-latest .text {
-    margin-top: 5px;
+    /*margin-top: 5px;*/
+    margin-top: 1.58%;
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: lighter;
 }
 
 .content-content .news-month {
     /*width: 30%;*/
-    width: 421px;
-    height: 663px;
+    /*width: 421px;*/
+    width: 21.93%;
+    /*height: 663px*/
+    height: 61.39%;
 }
 
 .content-content .news-month p {
@@ -71,18 +84,23 @@ body {
 }
 
 .content-content .news-month img {
-    margin-top: 31px;
-    width: 421px;
-    height: 576px;
+    /*margin-top: 31px;*/
+    margin-top: 4.67%;
+    /*width: 421px;*/
+    width: 100%;
+    /*height: 576px;*/
+    height: 86.88%;
 }
 
 .content-content .news-month .month {
     font-weight: bold;
-    margin-top: 2px;
+    /*margin-top: 2px;*/
+    margin-top: 0.3%;
 }
 
 .content-content .news-month .text {
-    margin-top: 5px;
+    /*margin-top: 5px;*/
+    margin-top: 0.75%;
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: lighter;
 }

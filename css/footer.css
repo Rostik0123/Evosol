@@ -6,18 +6,23 @@ footer {
 .site-footer {
     /*position: absolute;*/
     /*bottom: 0;*/
+    position: relative;
     width: 100%;
     /*width: 1634px;*/
-    height: 190px;
+    /*height: 190px;*/
+    height: 17.6%;
     background: #F5F5F5;
     text-decoration: none;
 }
 
 .site-footer .content-footer {
     /*width: 100% ;*/
-    height: 190px;
+    /*height: 190px;*/
+    height: 100%;
     /*position: relative;*/
-    margin: 22px 143px 19px;
+    /*margin: 22px 143px 19px;*/
+    /*margin: 11.58% 7.45% 10%;*/
+    padding: 2% 7.45% 1.76%;
     font-family: 'Roboto', sans-serif;
     display: flex;
     /*align-items: center;*/
