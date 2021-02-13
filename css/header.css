@@ -17,8 +17,10 @@
 .site-header .content-header {
     /* width: 85%; */
     /* margin: 0 auto; */
-    padding-left: 143px;
-    padding-right: 143px;
+    /* padding-left: 143px;
+    padding-right: 143px; */
+    padding-left: 7.45vw;
+    padding-right: 7.45vw;
     display: flex;
     align-items: center;
     /*float: left;*/

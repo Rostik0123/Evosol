@@ -4,8 +4,8 @@ footer {
 }
 
 .site-footer {
-    /* position: absolute; */
-    /* bottom: 0; */
+    /* position: absolute;
+    bottom: 0; */
     /* top: 100vh; */
     /* position: relative; */
     width: 100%;
@@ -22,7 +22,8 @@ footer {
     /* height: 190px; */
     /* height: 100%; */
     /*position: relative;*/
-    margin: 22px 143px 19px;
+    /* margin: 22px 143px 19px; */
+    margin: 22px 7.45vw 19px;
     /* padding: 22px 143px 19px; */
     font-family: 'Roboto', sans-serif;
     display: flex;
