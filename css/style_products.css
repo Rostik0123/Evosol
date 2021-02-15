@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.content-content a {
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.2em;
+}
+
+.content-content {
+    /* margin-right: 143px;
+    margin-left: 143px;
+    margin-top: 100px;
+    margin-bottom: 64px; */
+    margin: 9.26vh 7.45vw 5.93vh;
+    height: calc(100% - 190px - 100px);
+    /* margin-bottom: 190px; */
+    /* width: 100%; */
+    display: grid;
+    grid-template-areas:
+            "column-first column-second product-main"
+            "column-first column-second product-main";
+    grid-template-columns: 30.68% 29.01% 25.42%;
+    grid-template-rows: 50% 50%;
+    grid-gap: 0;
+}
+
+.content-content .other-products .column-first {
+    grid-area: column-first;
+    display: flex;
+    float: left;
+}
+
+.content-content .other-products .column-second {
+    grid-area: column-second;
+    display: flex;
+    float: left;
+}
+
+.content-content .product-main {
+    grid-area: product-main;
+}
+
+.content-content .other-products img {
+    width: 100%;
+}
+
+.content-content .product-main img {
+    height: 100%;
+}
+
+.news-latest-all {
+    display: flex;
+    float: left;
+}
+
+.news-week {
+    /*margin-top: 36px;*/
+    /*margin-right: 160px;*/
+    margin-top: 3.33vh;
+    margin-right: 8.33vw;
+    grid-area: week;
+}
+
+.news-month {
+    /*margin-top: 31px;*/
+    margin-top: 2.87vh;
+    /* overflow: hidden; */
+    grid-area: month;
+}
+
+/* .site-footer { */
+/* grid-area: footer;
+} */
+
+.news-week-all {
+    display: flex;
+    float: left;
+}
+
+.news-other img {
+    width: 100%;
+    /* height: 100%; */
+}
+
+.news-month img {
+    width: 100%;
+    /* height: 100%; */
+}
+
+.content-content .news-other p {
+    margin-top: 2px;
+}
+
+.content-content .news-other .new {
+    font-weight: bold;
+}
+
+.content-content .news-other .text {
+    margin-top: 5px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: lighter;
+}
+
+.content-content .news-month p {
+    text-align: center;
+}
+
+.content-content .news-month .month {
+    font-weight: bold;
+    margin-top: 2px;
+}
+
+.content-content .news-month .text {
+    margin-top: 5px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: lighter;
+}
+
+.news-latest {
+    /* margin-top: 31px;
+    margin-right: 160px; */
+    margin-top: 2.87vh;
+    margin-right: 8.33vw;
+    grid-area: latest;
+}
+

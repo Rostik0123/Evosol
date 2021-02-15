@@ -20,11 +20,8 @@
     margin-left: 143px;
     margin-top: 100px;
     margin-bottom: 64px; */
-    margin-right: 7.45vw;
-    margin-left: 7.45vw;
-    margin-top: 9.26vh;
-    margin-bottom: 5.93vh;
-    height: calc(100% - 190px- 100px);
+    margin: 9.26vh 7.45vw 5.93vh;
+    height: calc(100% - 190px - 100px);
     /* margin-bottom: 190px; */
     /* width: 100%; */
     display: grid;
@@ -85,13 +82,16 @@
 }
 
 .news-week {
-    margin-top: 36px;
-    margin-right: 160px;
+    /*margin-top: 36px;*/
+    /*margin-right: 160px;*/
+    margin-top: 3.33vh;
+    margin-right: 8.33vw;
     grid-area: week;
 }
 
 .news-month {
-    margin-top: 31px;
+    /*margin-top: 31px;*/
+    margin-top: 2.87vh;
     /* overflow: hidden; */
     grid-area: month;
 }
