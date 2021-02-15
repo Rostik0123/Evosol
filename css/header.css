@@ -5,7 +5,8 @@
     margin: 0;
     top: 0;
     width: 100%;
-    height: 100px;
+    /*height: 100px;*/
+    height: 10vh;
     /* height: 9.26%; */
     background: #ffffff;
     /*display: flex;*/
@@ -17,7 +18,7 @@
 
 .site-header .content-header {
     /* width: 85%; */
-    /* margin: 0 auto; */
+    /* margin: 0 auto;*/
     /* padding-left: 143px;
     padding-right: 143px; */
     padding-left: 7.45vw;
@@ -32,7 +33,8 @@
 .site-header .site-title {
     width: 25%;
     display: flex;
-    line-height: 92px;
+    /*line-height: 92px;*/
+    line-height: 8.52vh;
     /* line-height: 92%; */
     font-family: 'Roboto', sans-serif;
     /*margin-top: 16px;*/
@@ -40,18 +42,27 @@
 }
 
 .site-header .site-title .logo {
-    width: 69px;
+    /*width: 69px;*/
+    width: 3.6vw;
     /* width: 3.59%; */
-    height: 60px;
+    /*height: 60px;*/
+    height: 5.56vh;
     /* height: 65.22%; */
-    padding-top: 16px;
+    /*padding-top: 16px;*/
+    padding-top: 1.5vh;
     /* padding-top: 17.39%; */
     /*margin-left: 143px;*/
     /*margin-top: 16px;*/
 }
 
+.site-header .site-title img {
+    width: 3.6vw;
+    /*height: 5.56vh;*/
+}
+
 .site-header .site-title div {
-    margin-right: 13px;
+    /*margin-right: 13px;*/
+    margin-right: 0.68vw;
     /* margin-right: 14.13%; */
 }
 
@@ -75,8 +86,8 @@
 .site-header .navigation {
     width: 50%;
     text-align: center;
-    top: 34px;
-    /* top: 34%; */
+    /*top: 34px;*/
+    top: 3.15vh;
     display: flex;
     font-family: 'Source Sans Pro', sans-serif;
 }
@@ -110,7 +121,8 @@
     color: #7A7A7A;
     text-decoration: none;
     float: right;
-    margin-right: 15px;
+    /*margin-right: 15px;*/
+    margin-right: 0.8vw;
     transition: .2s;
 }
 

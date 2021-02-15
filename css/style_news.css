@@ -44,7 +44,7 @@
     grid-gap: 0;
 }
 
-.content-content .other-products .column-first .product {
+.content-content .other-products .column-first .product{
     grid-area: column-first;
     margin-right: 3.23vw;
     position: relative;
@@ -53,7 +53,7 @@
     overflow: hidden;
 }
 
-.content-content .other-products .column-first .product:first-child {
+.content-content .other-products .column-first .product:first-child{
     margin-bottom: 7.4vh;
 }
 
@@ -67,7 +67,7 @@
 }
 
 
-.content-content .other-products .product a {
+.content-content .other-products .product a{
     z-index: 20;
     position: absolute;
 }
@@ -81,7 +81,6 @@
     bottom: 0;
     left: 0;
     background: rgba(0, 0, 0, 0.22);
-    transition: .2s;
 }
 
 .front {
@@ -93,43 +92,20 @@
     left: 0;
 }
 
-
-.product:hover .bg {
-    transition: .2s;
-    background: rgba(0, 0, 0, 0.4);
-}
-
-.product-main:hover .bg {
-    transition: .2s;
-    background: rgba(0, 0, 0, 0.4);
-}
-
-.content-content .other-products .product:hover .product-description {
-    transition: .2s;
-    visibility: visible;
-}
-
-.content-content .product-main:hover .product-description {
-    transition: .2s;
-    visibility: visible;
-}
-
-.content-content .other-products .product .product-title {
+.content-content .other-products .product .product-title{
     bottom: 7.45%;
     left: 2%;
     margin-bottom: 15px;
     font-weight: bold;
 }
 
-.content-content .other-products .product .product-price {
+.content-content .other-products .product .product-price{
     bottom: 3.37%;
     left: 2%;
     font-weight: 600;
 }
 
-.content-content .other-products .product .product-description {
-    visibility: hidden;
-    transition: .1s;
+.content-content .other-products .product .product-description{
     top: 3.37%;
     right: 2%;
     left: 10%;
@@ -158,7 +134,7 @@
     z-index: 5;
 }
 
-.content-content .product-main a {
+.content-content .product-main a{
     z-index: 20;
     position: absolute;
 }
@@ -170,15 +146,13 @@
     font-weight: bold;
 }
 
-.content-content .product-main .product-price {
+.content-content .product-main .product-price{
     bottom: 3.37%;
     right: 2%;
     font-weight: 600;
 }
 
-.content-content .product-main .product-description {
-    visibility: hidden;
-    transition: .1s;
+.content-content .product-main .product-description{
     top: 3.37%;
     right: 2%;
     left: 10%;
