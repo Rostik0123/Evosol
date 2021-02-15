@@ -6,125 +6,147 @@
 .content-content a {
     text-decoration: none;
     color: #ffffff;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: Source Sans Pro;
+    font-style: normal;
     font-size: 1.2em;
 }
 
 .content-content {
-    /* margin-right: 143px;
-    margin-left: 143px;
-    margin-top: 100px;
-    margin-bottom: 64px; */
-    margin: 9.26vh 7.45vw 5.93vh;
+    margin: 12.13vh 7.45vw 5.93vh;
     height: calc(100% - 190px - 100px);
-    /* margin-bottom: 190px; */
-    /* width: 100%; */
     display: grid;
     grid-template-areas:
-            "column-first column-second product-main"
-            "column-first column-second product-main";
-    grid-template-columns: 30.68% 29.01% 25.42%;
-    grid-template-rows: 50% 50%;
+            "other-products product-main";
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 100%;
     grid-gap: 0;
 }
 
-.content-content .other-products .column-first {
-    grid-area: column-first;
-    display: flex;
-    float: left;
-}
-
-.content-content .other-products .column-second {
-    grid-area: column-second;
-    display: flex;
-    float: left;
+.content-content .other-products {
+    grid-area: other-products;
 }
 
 .content-content .product-main {
     grid-area: product-main;
 }
 
+
+.content-content .other-products {
+    /* margin: 9.26vh 7.45vw 5.93vh; */
+    margin-right: 4.8vw;
+    height: 100%;
+    display: grid;
+    grid-template-areas:
+            "column-first column-second"
+            "column-first column-second";
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    grid-gap: 0;
+}
+
+.content-content .other-products .column-first .product{
+    grid-area: column-first;
+    margin-right: 3.23vw;
+    position: relative;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.content-content .other-products .column-first .product:first-child{
+    margin-bottom: 7.4vh;
+}
+
+.content-content .other-products .column-second .product {
+    grid-area: column-second;
+    margin-left: 3.23vw;
+    position: relative;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+
+.content-content .other-products .product a{
+    z-index: 20;
+    position: absolute;
+}
+
+
+.bg {
+    z-index: 20;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.22);
+}
+
+.content-content .other-products .product .product-title{
+    bottom: 7.45%;
+    left: 2%;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.content-content .other-products .product .product-price{
+    bottom: 3.37%;
+    left: 2%;
+    font-weight: 600;
+}
+
+.content-content .other-products .product .product-description{
+    top: 3.37%;
+    right: 2%;
+    left: 10%;
+    text-align: right;
+    font-weight: 600;
+}
+
+.content-content .other-products .column-second .product:first-child {
+    margin-bottom: 7.4vh;
+}
+
+.content-content .product-main {
+    grid-area: product-main;
+    position: relative;
+}
+
 .content-content .other-products img {
     width: 100%;
+    height: 100%;
+    z-index: 5;
 }
 
 .content-content .product-main img {
+    width: 100%;
     height: 100%;
+    z-index: 5;
 }
 
-.news-latest-all {
-    display: flex;
-    float: left;
+.content-content .product-main a{
+    z-index: 20;
+    position: absolute;
 }
 
-.news-week {
-    /*margin-top: 36px;*/
-    /*margin-right: 160px;*/
-    margin-top: 3.33vh;
-    margin-right: 8.33vw;
-    grid-area: week;
-}
-
-.news-month {
-    /*margin-top: 31px;*/
-    margin-top: 2.87vh;
-    /* overflow: hidden; */
-    grid-area: month;
-}
-
-/* .site-footer { */
-/* grid-area: footer;
-} */
-
-.news-week-all {
-    display: flex;
-    float: left;
-}
-
-.news-other img {
-    width: 100%;
-    /* height: 100%; */
-}
-
-.news-month img {
-    width: 100%;
-    /* height: 100%; */
-}
-
-.content-content .news-other p {
-    margin-top: 2px;
-}
-
-.content-content .news-other .new {
+.content-content .product-main .product-title {
+    bottom: 7.45%;
+    right: 2%;
+    margin-bottom: 15px;
     font-weight: bold;
 }
 
-.content-content .news-other .text {
-    margin-top: 5px;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-weight: lighter;
+.content-content .product-main .product-price{
+    bottom: 3.37%;
+    left: 2%;
+    font-weight: 600;
 }
 
-.content-content .news-month p {
-    text-align: center;
+.content-content .product-main .product-description{
+    top: 3.37%;
+    right: 2%;
+    left: 10%;
+    text-align: right;
+    font-weight: 600;
 }
-
-.content-content .news-month .month {
-    font-weight: bold;
-    margin-top: 2px;
-}
-
-.content-content .news-month .text {
-    margin-top: 5px;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-weight: lighter;
-}
-
-.news-latest {
-    /* margin-top: 31px;
-    margin-right: 160px; */
-    margin-top: 2.87vh;
-    margin-right: 8.33vw;
-    grid-area: latest;
-}
-
