@@ -12,62 +12,30 @@
 }
 
 .content-content {
-    margin: 12.13vh 7.45vw 5.93vh;
+    margin: 12.13vh 7.45vw 6.4vh;
     height: calc(100% - 190px - 100px);
     display: grid;
     grid-template-areas:
-            "other-products product-main";
-    grid-template-columns: 60% 40%;
+            "news news news";
+    grid-template-columns: 31.67vw 31.67vw 21.77vw;
     grid-template-rows: 100%;
-    grid-gap: 0;
+    grid-gap: 0s;
 }
 
-.content-content .other-products {
-    grid-area: other-products;
-}
-
-.content-content .product-main {
-    grid-area: product-main;
-}
-
-
-.content-content .other-products {
-    /* margin: 9.26vh 7.45vw 5.93vh; */
-    margin-right: 4.8vw;
-    height: 100%;
-    display: grid;
-    grid-template-areas:
-            "column-first column-second"
-            "column-first column-second";
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 50% 50%;
-    grid-gap: 0;
-}
-
-.content-content .other-products .column-first .product{
-    grid-area: column-first;
-    margin-right: 3.23vw;
+.content-content .news {
+    /* grid-area: news; */
+    margin-right: 9.9vw;
     position: relative;
     display: flex;
     align-items: center;
     overflow: hidden;
 }
 
-.content-content .other-products .column-first .product:first-child{
-    margin-bottom: 7.4vh;
+.content-content .news:last-child {
+    margin-right: 0;
 }
 
-.content-content .other-products .column-second .product {
-    grid-area: column-second;
-    margin-left: 3.23vw;
-    position: relative;
-    display: flex;
-    align-items: center;
-    overflow: hidden;
-}
-
-
-.content-content .other-products .product a{
+.content-content .news a {
     z-index: 20;
     position: absolute;
 }
@@ -81,6 +49,16 @@
     bottom: 0;
     left: 0;
     background: rgba(0, 0, 0, 0.22);
+    transition: .2s;
+}
+
+.front a {
+    z-index: 25;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
 }
 
 .front {
@@ -92,70 +70,68 @@
     left: 0;
 }
 
-.content-content .other-products .product .product-title{
-    bottom: 7.45%;
-    left: 2%;
-    margin-bottom: 15px;
-    font-weight: bold;
+
+.news:hover .bg {
+    transition: .2s;
+    background: rgba(0, 0, 0, 0.4);
 }
 
-.content-content .other-products .product .product-price{
-    bottom: 3.37%;
-    left: 2%;
+.content-content .news .news-title {
+    margin-bottom: 0vh;
+    font-size: 1em;
+    font-weight: normal;
+    text-align: center;
+}
+
+.content-content .news .news-description {
+    font-size: 1.2em;
+    text-align: center;
     font-weight: 600;
+    line-height: 3vh;
 }
 
-.content-content .other-products .product .product-description{
-    top: 3.37%;
-    right: 2%;
-    left: 10%;
-    text-align: right;
-    font-weight: 600;
-}
-
-.content-content .other-products .column-second .product:first-child {
-    margin-bottom: 7.4vh;
-}
-
-.content-content .product-main {
-    grid-area: product-main;
-    position: relative;
-}
-
-.content-content .other-products img {
+.content-content .news img {
     width: 100%;
     height: 100%;
     z-index: 5;
 }
 
-.content-content .product-main img {
-    width: 100%;
-    height: 100%;
-    z-index: 5;
-}
-
-.content-content .product-main a{
-    z-index: 20;
+.content-news {
     position: absolute;
+    z-index: 20;
+    bottom: 17%;
+    text-decoration: none;
+    color: #ffffff;
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-size: 1.2em;
+    right: 0;
+    left: 0;
 }
 
-.content-content .product-main .product-title {
-    bottom: 7.45%;
-    right: 2%;
-    margin-bottom: 15px;
-    font-weight: bold;
+/* ----------------------MORE------------------ */
+.more {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    height: 5.65vh;
+    width: 100%;
+    margin-bottom: 6.4vh;
+    flex-wrap: wrap;
 }
 
-.content-content .product-main .product-price{
-    bottom: 3.37%;
-    right: 2%;
+.more a {
+    margin: auto;
+    text-decoration: none;
+    color: #4A4A4A;
     font-weight: 600;
+    font-size: 1.4em;
+    line-height: .3;
+    font-family: Source Sans Pro;
+    font-style: normal;
 }
 
-.content-content .product-main .product-description{
-    top: 3.37%;
-    right: 2%;
-    left: 10%;
-    text-align: right;
-    font-weight: 600;
+
+.more i {
+    color: #7A7A7A;
 }
