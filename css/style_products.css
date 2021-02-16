@@ -198,3 +198,37 @@
     font-size: 1.6em;
     font-weight: 600;
 }
+
+/* ----------------------MORE------------------ */
+.more {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    height: 5.65vh;
+    width: 100%;
+    margin-bottom: 6.4vh;
+    flex-wrap: wrap;
+}
+
+.more:hover i {
+    margin-top: .9vh;
+    transition: .2s;
+}
+
+.more a {
+    margin: auto;
+    text-decoration: none;
+    color: #4A4A4A;
+    font-weight: 600;
+    font-size: 1.4em;
+    line-height: .3;
+    font-family: Source Sans Pro;
+    font-style: normal;
+}
+
+
+.more i {
+    margin-top: 0;
+    transition: .2s;
+    color: #7A7A7A;
+}
