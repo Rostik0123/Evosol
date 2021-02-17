@@ -3,142 +3,286 @@
     padding: 0;
 }
 
-.content-content a {
-    text-decoration: none;
-    color: #ffffff;
-    font-family: Source Sans Pro;
-    font-style: normal;
-    font-size: 1.2em;
-}
-
-.content-content {
-    margin: 12.13vh 7.45vw 6.4vh;
+.order {
+    margin-right: 143px;
+    margin-left: 1474px;
     height: calc(100% - 190px - 100px);
-    display: grid;
-    grid-template-areas:
-            "news news news";
-    grid-template-columns: 31.67vw 31.67vw 21.77vw;
-    grid-template-rows: 100%;
-    grid-gap: 0;
-}
-
-.content-content .news {
-    /* grid-area: news; */
-    margin-right: 9.9vw;
-    position: relative;
+    position: fixed;
     display: flex;
-    align-items: center;
-    overflow: hidden;
+    flex-direction: column;
 }
 
-.content-content .news:last-child {
-    margin-right: 0;
+.order .rating {
+    display: flex;
+    flex-direction: row;
 }
 
-.content-content .news a {
-    z-index: 20;
-    position: absolute;
-}
-
-
-.bg {
-    z-index: 20;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: rgba(0, 0, 0, 0.22);
-    transition: .2s;
-}
-
-.front a {
-    z-index: 25;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-}
-
-.front {
-    z-index: 25;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-}
-
-
-.news:hover .bg {
-    transition: .2s;
-    background: rgba(0, 0, 0, 0.4);
-}
-
-.content-content .news .news-title {
-    margin-bottom: 0vh;
-    font-size: 1em;
+.order a {
+    text-decoration: none;
+    font-family: Roboto;
+    font-style: normal;
     font-weight: normal;
-    text-align: center;
+    color: #000000;
 }
 
-.content-content .news .news-description {
-    font-size: 1.2em;
-    text-align: center;
-    font-weight: 600;
-    line-height: 3vh;
+.order .rating a {
+    font-size: 16px;
 }
 
-.content-content .news img {
-    width: 100%;
-    height: 100%;
-    z-index: 5;
+.order .stars {
+    margin-left: 118px;
 }
 
-.content-news {
-    position: absolute;
-    z-index: 20;
-    bottom: 17%;
-    text-decoration: none;
-    color: #ffffff;
+.order .stars i {
+    font-size: 14px;
+}
+
+.order .title{
     font-family: Source Sans Pro;
-    font-style: normal;
-    font-size: 1.2em;
-    right: 0;
-    left: 0;
+    font-style: italic;
+    font-size: 24px;   
+    margin-top: 15px; 
 }
 
-/* ----------------------MORE------------------ */
-.more {
+.order .colors {
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.order .price {
+    font-size: 22px;
+    margin-top: 24px;
+}
+
+.order .buttons {
+    margin-top: 20px;
+    height: 51px;
+    width: 100%;
     display: flex;
-    align-items: center;
-    text-align: center;
-    height: 5.65vh;
-    width: 100%;
-    margin-bottom: 6.4vh;
-    flex-wrap: wrap;
+    flex-direction: row;
 }
 
-.more:hover i {
-    margin-top: .9vh;
-    transition: .2s;
+.buttons i {
+    color: #ffffff;
 }
 
-.more a {
-    margin: auto;
-    text-decoration: none;
-    color: #4A4A4A;
-    font-weight: 600;
-    font-size: 1.4em;
-    line-height: .3;
+/* -----------------------------Buy---------------- */
+.buttons .buy {
+    position: relative;
+    width: 85%;
+    margin-right: 12px;
+    cursor: pointer;
+}
+
+.buttons .buy:hover .bg {
+    transition: .3s;
+    left: 0;
+    bottom: 3px;
+}
+
+.buttons .buy .bg {
+    transition: .3s;
+    position: absolute;
+    z-index: 5;
+    width: 237px;
+    height: 48px;
+    left: 3px;
+    bottom: 0;
+    background-color: #6A6A6A;
+}
+
+.buttons .buy .front {
+    position: absolute;
+    width: 237px;
+    height: 48px;
+    z-index: 10;
+    left: 0;
+    bottom: 3px;
+    background-color: #000000;
+}
+
+.buttons p {
+    position: absolute;
     font-family: Source Sans Pro;
     font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    color: #ffffff;
+    z-index: 15;
+    bottom: 35%;
+    left: 5%;
 }
 
+.buttons .buy i {
+    position: absolute;
+    font-size: 20px;
+    z-index: 10;
+    right: 10%;
+    bottom: 35%;
+}
 
-.more i {
-    margin-top: 0;
-    transition: .2s;
-    color: #7A7A7A;
+/* ---------------------Like------------------------ */
+.buttons .like {
+    position: relative;
+    width: 15%;
+    cursor: pointer;
+}
+
+.buttons .like:hover .bg {
+    transition: .3s;
+    left: 0;
+    bottom: 3px;
+}
+
+.buttons .like .bg {
+    transition: .3s;
+    position: absolute;
+    z-index: 5;
+    width: 48px;
+    height: 48px;
+    left: 3px;
+    bottom: 0;
+    background-color: #6A6A6A;
+}
+
+.buttons .like .front{
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    z-index: 10;
+    left: 0;
+    bottom: 3px;
+    background-color: #000000;
+}
+
+.buttons .like i {
+    position: absolute;
+    font-size: 28px;
+    z-index: 10;
+    left: 25%;
+    bottom: 25%;
+}
+
+/* -----------------------------------Content------------------------- */
+.content-content {
+    margin: 12.13vh 7.45vw 5.93vh;
+    height: calc(100% - 190px - 100px);
+}
+
+.description {
+    margin-left: 82px;
+    margin-right: 513px;
+}
+
+.description p {
+    color: #000000;
+}
+
+.description .title {
+    font-family: Source Sans Pro;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 22px;
+    margin-top: 40px;
+}
+
+.description .text {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    margin-left: 10px;
+    margin-top: 6px;
+}
+
+/* ------------------------------Feedback----------------------------------- */
+.feedback {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 68px;
+    margin-top: 8px;
+}
+
+.feedback p {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    color: #000000;
+}
+
+/* ------------------------------------Rating-------------------------- */
+.feedback .rating {
+    background: #24DC6E;
+    position: relative;
+    width: 25%;
+    height: 100%;
+    margin-right: 70px;
+}
+
+.feedback .rating .num {
+    position: absolute;
+    bottom: 15%;
+    left: 10%;
+    font-weight: 500;
+    font-size: 40px;
+}
+
+.feedback .rating .review {
+    position: absolute;
+    bottom: 20%;
+    right: 15%;
+    font-size: 14px;
+}
+
+.feedback .rating .stars {
+    position: absolute;
+    top: 30%;
+    right: 15%;
+}
+
+.feedback .rating .stars {
+    font-size: 14px;
+}
+
+/* ---------------------------------Sort------------- */
+.feedback .latest {
+    /* background: #24DC6E; */
+    position: relative;
+    width: 25%;
+    height: 100%;
+    margin-right: 35px;
+}
+
+.feedback .latest .bg{
+    /* transition: .3s; */
+    position: absolute;
+    z-index: 5;
+    /* width: 48px;
+    height: 48px; */
+    left: 3px;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: #000000;
+}
+
+.feedback .latest .front{
+
+}
+
+.feedback .useful {
+    background: #24DC6E;
+    position: relative;
+    width: 25%;
+    height: 100%;
+    margin-right: 35px;
+}
+
+.feedback .popular {
+    background: #24DC6E;
+    position: relative;
+    width: 25%;
+    height: 100%;
+    margin-right: 35px;
 }
