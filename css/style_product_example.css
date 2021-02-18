@@ -4,9 +4,12 @@
 }
 
 .order {
-    margin-right: 143px;
-    margin-left: 1474px;
-    height: calc(100% - 190px - 100px);
+    /* margin-right: 143px; */
+    /* margin-left: 1474px; */
+    margin-right: 7.45vw;
+    margin-left: 76.77vw;
+    /* height: calc(100% - 190px - 100px); */
+    height: calc(100% - 17.6vh - 10vh);
     position: fixed;
     display: flex;
     flex-direction: column;
@@ -26,37 +29,50 @@
 }
 
 .order .rating a {
-    font-size: 16px;
+    /* font-size: 16px; */
+    font-size: 0.9vw;
 }
 
 .order .stars {
-    margin-left: 118px;
+    display: flex;
+    flex-wrap: nowrap;
+    /* margin-left: 118px; */
+    margin-left: 6.15vw;
 }
 
 .order .stars i {
-    font-size: 14px;
+    /* font-size: 14px; */
+    font-size: 0.75vw;
 }
 
 .order .title{
     font-family: Source Sans Pro;
     font-style: italic;
-    font-size: 24px;   
-    margin-top: 15px; 
+    /* font-size: 24px;    */
+    font-size: 1.25vw;   
+    /* margin-top: 15px;  */
+    margin-top: 1.4vh; 
 }
 
 .order .colors {
-    font-size: 12px;
-    margin-top: 10px;
+    /* font-size: 12px; */
+    font-size: 0.62vw;
+    /* margin-top: 10px; */
+    margin-top: 0.93vh;
 }
 
 .order .price {
-    font-size: 22px;
-    margin-top: 24px;
+    font-size: 1.15vw;
+    /* font-size: 22px; */
+    /* margin-top: 24px; */
+    margin-top: 2.22vh;
 }
 
 .order .buttons {
-    margin-top: 20px;
-    height: 51px;
+    /* margin-top: 20px; */
+    /* height: 51px; */
+    margin-top: 1.85vh;
+    height: 4.72vh;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -70,7 +86,8 @@
 .buttons .buy {
     position: relative;
     width: 85%;
-    margin-right: 12px;
+    /* margin-right: 12px; */
+    margin-right: 0.625vw;
     cursor: pointer;
 }
 
@@ -84,8 +101,10 @@
     transition: .3s;
     position: absolute;
     z-index: 5;
-    width: 237px;
-    height: 48px;
+    width: 12.34vw;
+    /* width: 237px; */
+    /* height: 48px; */
+    height: 5vh;
     left: 3px;
     bottom: 0;
     background-color: #6A6A6A;
@@ -93,8 +112,10 @@
 
 .buttons .buy .front {
     position: absolute;
-    width: 237px;
-    height: 48px;
+    width: 12.34vw;
+    /* width: 237px; */
+    /* height: 48px; */
+    height: 5vh;
     z-index: 10;
     left: 0;
     bottom: 3px;
@@ -106,7 +127,8 @@
     font-family: Source Sans Pro;
     font-style: normal;
     font-weight: 600;
-    font-size: 16px;
+    /* font-size: 16px; */
+    font-size: 0.9vw;
     color: #ffffff;
     z-index: 15;
     bottom: 35%;
@@ -115,10 +137,11 @@
 
 .buttons .buy i {
     position: absolute;
-    font-size: 20px;
+    /* font-size: 20px; */
+    font-size: 1.15vw;
     z-index: 10;
-    right: 10%;
-    bottom: 35%;
+    right: 8%;
+    bottom: 36%;
 }
 
 /* ---------------------Like------------------------ */
@@ -138,8 +161,10 @@
     transition: .3s;
     position: absolute;
     z-index: 5;
-    width: 48px;
-    height: 48px;
+    /* width: 48px; */
+    /* height: 48px; */
+    width: 2.5vw;
+    height: 5vh;
     left: 3px;
     bottom: 0;
     background-color: #6A6A6A;
@@ -147,8 +172,11 @@
 
 .buttons .like .front{
     position: absolute;
-    width: 48px;
-    height: 48px;
+    /* width: 48px; */
+    /* height: 48px; */
+    width: 2.5vw;
+    height: 5vh;
+    height: 5vh;
     z-index: 10;
     left: 0;
     bottom: 3px;
@@ -157,21 +185,33 @@
 
 .buttons .like i {
     position: absolute;
-    font-size: 28px;
+    /* font-size: 28px; */
+    font-size: 1.5vw;
     z-index: 10;
-    left: 25%;
-    bottom: 25%;
+    left: 23%;
+    bottom: 26%;
 }
 
 /* -----------------------------------Content------------------------- */
 .content-content {
     margin: 12.13vh 7.45vw 5.93vh;
-    height: calc(100% - 190px - 100px);
+    /* height: calc(100% - 190px - 100px); */
+    height: calc(100% - 17.6vh - 10vh);
+}
+
+/* -----------------------------------Slider--------------------- */
+.slider {
+    /* margin-left: 82px; */
+    /* margin-right: 513px; */
+    margin-left: 4.27vw;
+    margin-right: 26.72vw;
 }
 
 .description {
-    margin-left: 82px;
-    margin-right: 513px;
+    /* margin-left: 82px; */
+    /* margin-right: 513px; */
+    margin-left: 4.27vw;
+    margin-right: 26.72vw;
 }
 
 .description p {
@@ -182,15 +222,18 @@
     font-family: Source Sans Pro;
     font-style: italic;
     font-weight: normal;
-    font-size: 22px;
-    margin-top: 40px;
+    /* font-size: 22px; */
+    font-size: 1.15vw;
+    /* margin-top: 40px; */
+    margin-top: 3.7vh;
 }
 
 .description .text {
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
-    font-size: 16px;
+    /* font-size: 16px; */
+    font-size: 0.83vw;
     margin-left: 10px;
     margin-top: 6px;
 }
@@ -200,8 +243,10 @@
     display: flex;
     flex-direction: row;
     width: 100%;
-    height: 68px;
-    margin-top: 8px;
+    /* height: 68px; */
+    /* margin-top: 8px; */
+    height: 6.4vh;
+    margin-top: 0.74vh;
 }
 
 .feedback p {
@@ -217,7 +262,8 @@
     position: relative;
     width: 25%;
     height: 100%;
-    margin-right: 70px;
+    /* margin-right: 70px; */
+    margin-right: 3.65vw;
 }
 
 .feedback .rating .num {
@@ -225,24 +271,27 @@
     bottom: 15%;
     left: 10%;
     font-weight: 500;
-    font-size: 40px;
+    /* font-size: 40px; */
+    font-size: 2.15vw;
 }
 
 .feedback .rating .review {
     position: absolute;
     bottom: 20%;
     right: 15%;
-    font-size: 14px;
+    /* font-size: 14px; */
+    font-size: 0.79vw;
 }
 
 .feedback .rating .stars {
     position: absolute;
-    top: 30%;
+    top: 25%;
     right: 15%;
 }
 
 .feedback .rating .stars {
-    font-size: 14px;
+    /* font-size: 14px; */
+    font-size: 0.73vw;
 }
 
 /* ---------------------------------Sort------------- */
@@ -251,10 +300,22 @@
     position: relative;
     width: 25%;
     height: 100%;
-    margin-right: 35px;
+    /* margin-right: 35px; */
+    margin-right: 1.82vw;
+    cursor: pointer;
+}
+
+.feedback .latest:hover .bg {
+    transition: .3s;
+    background-color: #000000;
 }
 
 .feedback .latest p {
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: 600;
+    /* font-size: 16px; */
+    font-size: 0.9vw;
     /* transition: .3s; */
     position: absolute;
     z-index: 10;
@@ -265,7 +326,7 @@
 }
 
 .feedback .bg {
-    /* transition: .3s; */
+    transition: .3s;
     position: absolute;
     z-index: 5;
     /* width: 48px;
@@ -307,13 +368,20 @@
 }
 
 .feedback .useful {
+    cursor: pointer;
     position: relative;
     width: 25%;
     height: 100%;
-    margin-right: 35px;
+    /* margin-right: 35px; */
+    margin-right: 1.82vw;
 }
 
 .feedback .useful p {
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: 600;
+    /* font-size: 16px; */
+    font-size: 0.9vw;
     /* transition: .3s; */
     position: absolute;
     z-index: 10;
@@ -323,11 +391,16 @@
     bottom: 20%;
 }
 
+.feedback .useful:hover .bg {
+    background-color: #f6e50e;
+}
+
 .feedback .useful .bg {
     background-color: #C3C3C3;
 }
 
 .feedback .popular {
+    cursor: pointer;
     position: relative;
     width: 25%;
     height: 100%;
@@ -335,6 +408,11 @@
 }
 
 .feedback .popular p {
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: 600;
+    /* font-size: 16px; */
+    font-size: 0.9vw;
     /* transition: .3s; */
     position: absolute;
     z-index: 10;
@@ -344,12 +422,67 @@
     bottom: 20%;
 }
 
+.feedback .popular:hover .bg {
+    background-color: #f6e50e;
+}
+
 .feedback .popular .bg {
     background-color: #C3C3C3;
 }
 
 /*------------------Comment--------------*/
 .comment {
+    /* margin-left: 377px; */
+    /* margin-right: 513px; */
+    /* margin-top: 32px; */
+    /* margin-bottom: 145px; */
     margin-left: 377px;
     margin-right: 513px;
+    margin-top: 32px;
+    margin-bottom: 145px;
+}
+
+.comment .information {
+    display: flex;
+}
+
+.comment .stars {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.comment .stars i {
+    /* font-size: 12px; */
+    font-size: 0.67vw;
+}
+
+.comment .date {
+    width: 100%;
+    text-align: end;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    /* font-size: 14px; */
+    font-size: 0.73vw;
+    color: #4A4A4A;
+}
+
+.comment .title {
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: 600;
+    /* font-size: 20px; */
+    font-size: 1.04vw;
+    color: #0f0e0e;
+    margin-top: 12px;
+}
+
+.comment .text {
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: normal;
+    /* font-size: 16px; */
+    font-size: 0.84vw;
+    color: #000000;  
+    margin-top: 4px;  
 }
