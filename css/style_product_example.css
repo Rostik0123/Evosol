@@ -176,7 +176,6 @@
     /* height: 48px; */
     width: 2.5vw;
     height: 5vh;
-    height: 5vh;
     z-index: 10;
     left: 0;
     bottom: 3px;
@@ -234,8 +233,10 @@
     font-weight: normal;
     /* font-size: 16px; */
     font-size: 0.83vw;
-    margin-left: 10px;
-    margin-top: 6px;
+    /*margin-left: 10px;*/
+    margin-left: 0.52vw;
+    /*margin-top: 6px;*/
+    margin-top: 0.56vh;
 }
 
 /* ------------------------------Feedback----------------------------------- */
@@ -436,10 +437,7 @@
     /* margin-right: 513px; */
     /* margin-top: 32px; */
     /* margin-bottom: 145px; */
-    margin-left: 377px;
-    margin-right: 513px;
-    margin-top: 32px;
-    margin-bottom: 145px;
+    margin: 3vh 26.72vw 13.43vw 19.64vw;
 }
 
 .comment .information {
@@ -474,7 +472,8 @@
     /* font-size: 20px; */
     font-size: 1.04vw;
     color: #0f0e0e;
-    margin-top: 12px;
+    /*margin-top: 12px;*/
+    margin-top: 1.11vh;
 }
 
 .comment .text {
