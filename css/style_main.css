@@ -42,6 +42,9 @@
 .news-latest-all {
     display: flex;
     float: left;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
 }
 
 .content-content .news-other p {
@@ -74,10 +77,13 @@
 }
 
 .news-latest {
+    width: 46%;
     /* margin-top: 31px;
     margin-right: 160px; */
     margin-top: 2.87vh;
-    margin-right: 8.33vw;
+    /*flex: 1;*/
+    /*margin-right: 8.33vw;*/
+    /*margin-right: 8.33vw;*/
     grid-area: latest;
 }
 
