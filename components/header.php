@@ -11,6 +11,7 @@
             <div><a href="index.php"><span>ГЛАВНАЯ</span></a></div>
             <div><a href="products.php"><span>НАШИ ПРОДУКТЫ</span></a></div>
             <div><a href="news.php"><span>НОВОСТИ</span></a></div>
+<!--            <div><a href="#"><span>КАРТЫ</span></a></div>-->
             <div><a href="about.php"><span>О НАС</span></a></div>
         </nav>
         <div class="social">

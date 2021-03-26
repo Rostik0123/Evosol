@@ -21,43 +21,80 @@
 
         <!---------------------------------------Content------------------>
         <div class="content-content">
+
+            <?php
+            $products = [
+                [
+                    'title' => 'Модуль освещённости',
+                    'image' => 'img/product.jpg',
+                    'price' => '56 бел. руб.',
+                    'description' => 'Создан для измерения уровня освещённости в люксах',
+                    'href' => 'product_example.php'
+
+                ],
+                [
+                    'title' => 'Модуль освещённости',
+                    'image' => 'img/product.jpg',
+                    'price' => '56 бел. руб.',
+                    'description' => 'Создан для измерения уровня освещённости в люксах',
+                    'href' => 'product_example.php'],
+                [
+                    'title' => 'Модуль освещённости',
+                    'image' => 'img/product.jpg',
+                    'price' => '56 бел. руб.',
+                    'description' => 'Создан для измерения уровня освещённости в люксах',
+                    'href' => 'product_example.php'],
+                [
+                    'title' => 'Модуль освещённости',
+                    'image' => 'img/product.jpg',
+                    'price' => '56 бел. руб.',
+                    'description' => 'Создан для измерения уровня освещённости в люксах',
+                    'href' => 'product_example.php']
+            ];
+            ?>
+
             <div class="other-products">
-                <div class="column-first">
+<!--                <div class="column-first">-->
+                    <?php
+                    for ($i = 0; $i < count($products); $i++):
+                    ?>
+
                     <div class="product">
-                        <img src="img/product.jpg">
+                        <img src="<?= $products[$i]['image'] ?>">
                         <div class="bg"></div>
-                        <a class="product-title">Модуль освещённости</a>
-                        <a class="product-price">56 бел. руб.</a>
-                        <a class="product-description">Создан для измерения уровня освещённости в люксах</a>
-                        <div class="front"><a href="product_example.php"></a></div>
+                        <a class="product-title"><?= $products[$i]['title'] ?></a>
+                        <a class="product-price"><?= $products[$i]['price'] ?></a>
+                        <a class="product-description"><?= $products[$i]['description'] ?></a>
+                        <div class="front"><a href="<?= $products[$i]['href'] ?>"></a></div>
                     </div>
-                    <div class="product">
-                        <img src="img/product.jpg">
-                        <div class="bg"></div>
-                        <a class="product-title">Модуль освещённости</a>
-                        <a class="product-price">56 бел. руб.</a>
-                        <a class="product-description">Создан для измерения уровня освещённости в люксах</a>
-                        <div class="front"><a href="#"></a></div>
-                    </div>
-                </div>
-                <div class="column-second">
-                    <div class="product">
-                        <img src="img/product.jpg">
-                        <div class="bg"></div>
-                        <a class="product-title">Модуль освещённости</a>
-                        <a class="product-price">56 бел. руб.</a>
-                        <a class="product-description">Создан для измерения уровня освещённости в люксах</a>
-                        <div class="front"><a href="#"></a></div>
-                    </div>
-                    <div class="product">
-                        <img src="img/product.jpg">
-                        <div class="bg"></div>
-                        <a class="product-title">Модуль освещённости</a>
-                        <a class="product-price">56 бел. руб.</a>
-                        <a class="product-description">Создан для измерения уровня освещённости в люксах</a>
-                        <div class="front"><a href="#"></a></div>
-                    </div>
-                </div>
+                    <?php endfor ?>
+<!--                    <div class="product">-->
+<!--                        <img src="img/product.jpg">-->
+<!--                        <div class="bg"></div>-->
+<!--                        <a class="product-title">Модуль освещённости</a>-->
+<!--                        <a class="product-price">56 бел. руб.</a>-->
+<!--                        <a class="product-description">Создан для измерения уровня освещённости в люксах</a>-->
+<!--                        <div class="front"><a href="#"></a></div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="column-second">-->
+<!--                    <div class="product">-->
+<!--                        <img src="img/product.jpg">-->
+<!--                        <div class="bg"></div>-->
+<!--                        <a class="product-title">Модуль освещённости</a>-->
+<!--                        <a class="product-price">56 бел. руб.</a>-->
+<!--                        <a class="product-description">Создан для измерения уровня освещённости в люксах</a>-->
+<!--                        <div class="front"><a href="#"></a></div>-->
+<!--                    </div>-->
+<!--                    <div class="product">-->
+<!--                        <img src="img/product.jpg">-->
+<!--                        <div class="bg"></div>-->
+<!--                        <a class="product-title">Модуль освещённости</a>-->
+<!--                        <a class="product-price">56 бел. руб.</a>-->
+<!--                        <a class="product-description">Создан для измерения уровня освещённости в люксах</a>-->
+<!--                        <div class="front"><a href="#"></a></div>-->
+<!--                    </div>-->
+<!--                </div>-->
             </div>
             <div class="product-main">
                 <img src="img/product_main.jpg">

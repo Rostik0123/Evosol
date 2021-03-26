@@ -51,58 +51,25 @@
 
 
         <div class="news-other">
-                        <div class="news-latest-all">
             <?php
             for ($i = 0; $i < count($news); $i++):
                 ?>
-                <div class="news-latest">
+                <div class="news-content">
                     <img src="<?= $news[$i]['image'] ?>" alt="Новость">
-                    <p>
-                        <a href="#" class="new"><?= $news[$i]['title'] ?></a>
-                        <br>
-                        <a href="#" class="text"><?= $news[$i]['text'] ?></a>
-                    </p>
+                    <div class="bg"></div>
+                    <a class="news-title"><?= $news[$i]['title'] ?></a>
+                    <a class="news-text"><?= $news[$i]['text'] ?></a>
+                    <div class="front"><a href="news_example.php"></a></div>
                 </div>
             <?php endfor ?>
-
-<!--            <div class="news-latest">-->
-<!--                <img src="img/week.jpg" alt="Новость">-->
-<!--                <p>-->
-<!--                    <a href="#" class="new">Новое:</a>-->
-<!--                    <br>-->
-<!--                    <a href="#" class="text">Была выпущена новая образовательная<br> статья (объясняем PHP).</a>-->
-<!--                </p>-->
-<!--            </div>-->
-                        </div>
-
-            <!--            <div class="news-week-all">-->
-<!--            <div class="news-week">-->
-<!--                <img src="img/week.jpg" alt="Новость">-->
-<!--                <p>-->
-<!--                    <a href="#" class="new">Новость недели:</a>-->
-<!--                    <br>-->
-<!--                    <a href="#" class="text">В релиз вышло обновление нашего<br> приложения 1.01.</a>-->
-<!--                </p>-->
-<!--            </div>-->
-<!--            <div class="news-week">-->
-<!--                <img src="img/week.jpg" alt="Новость">-->
-<!--                <p>-->
-<!--                    <a href="#" class="new">Статья недели:</a>-->
-<!--                    <br>-->
-<!--                    <a href="#" class="text">Была выпущена новая образовательная<br> статья (объясняем PHP).</a>-->
-<!--                </p>-->
-<!--            </div>-->
-            <!--            </div>-->
-
         </div>
 
         <div class="news-month">
             <img src="img/month.jpg" alt="Новость">
-            <p>
-                <a href="#" class="month">Новость месяца:</a>
-                <br>
-                <a href="#" class="text">В продаже появился новый измерительный модуль (освещённости).</a>
-            </p>
+            <div class="bg"></div>
+            <a class="news-title">Новость месяца:</a>
+            <a class="news-text">В продаже появился новый измерительный модуль (освещённости).</a>
+            <div class="front"><a href="news_example.php"></a></div>
         </div>
 
     </div>
