@@ -31,7 +31,7 @@
 
 /*----------------------Site-title--------------*/
 .site-header .site-title {
-    width: 25%;
+    width: 20%;
     display: flex;
     /*line-height: 92px;*/
     line-height: 8.52vh;
@@ -84,7 +84,7 @@
 
 /*---------------------Navigation------------------------*/
 .site-header .navigation {
-    width: 50%;
+    width: 60%;
     text-align: center;
     /*top: 34px;*/
     top: 3.15vh;
@@ -114,7 +114,7 @@
 
 /*-----------------------Social-----------------*/
 .site-header .social {
-    width: 25%;
+    width: 20%;
 }
 
 .site-header .social a {

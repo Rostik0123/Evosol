@@ -32,7 +32,7 @@
             </div>
         </div>
         <div class="copyright">
-            <p class="help"><a href="#">Помощь</a></p>
+            <p class="help"><a href="help.php">Помощь</a></p>
             <p class="copy">© 2021<br>
                 Evosol, Belarus<br>
                 Все права защищены</p>
