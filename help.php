@@ -1,3 +1,10 @@
+<?php
+session_start();
+if (!empty($_POST)) {
+    require_once('./forms/help-form.php');
+}
+?>
+
 <!DOCTYPE html>
 <html lang="ru">
 
@@ -24,20 +31,6 @@
     <!---------------------------------------Content------------------>
     <div class="content-content">
 
-        <div class="form-wrap">
-            <h1>Оставить вопрос:</h1>
-            <form method="post" action="">
-                <div><input type="text" name="name" required placeholder="Ваше имя"></div>
-                <div><input type="email" name="email" required placeholder="Ваш e-mail"></div>
-                <div><input type="text" name="problem" required placeholder="Описание проблемы"></div>
-                <div class="send">
-                    <div class="bg"></div>
-                    <div class="front"></div>
-                    <p>ОТПРАВИТЬ</p>
-                    <i class="fas fa-paper-plane"></i>
-                </div>
-            </form>
-        </div>
 
     </div>
     <!---------------------------------------Footer------------------->

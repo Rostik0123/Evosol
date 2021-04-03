@@ -32,6 +32,18 @@ footer {
     justify-content: space-between;
 }
 
+/*.about {*/
+/*    width: 35%;*/
+/*}*/
+
+/*.navigation {*/
+/*    width: 50%;*/
+/*}*/
+
+/*.copyright {*/
+/*    width: 15%;*/
+/*}*/
+
 /*-------------------------------------About-------------------------------------*/
 .site-footer .content-footer .evosol {
     /*margin-top: 22px;*/
@@ -74,7 +86,7 @@ footer {
 .site-footer .content-footer .navigation {
     display: flex;
     /*margin-left: -120px;*/
-    margin-left: -6.25vw;
+    /*margin-left: -6.25vw;*/
     /*margin-top: 22px;*/
     margin-top: 2.04vh;
 }
@@ -84,14 +96,13 @@ footer {
     color: #000000;
 }
 
-.site-footer .content-footer .navigation .news {
+.site-footer .content-footer .navigation div {
     /*margin-right: 103px;*/
     margin-right: 5.37vw;
 }
 
-.site-footer .content-footer .navigation .products {
-    /*margin-right: 103px;*/
-    margin-right: 5.37vw;
+.site-footer .content-footer .navigation div:last-child {
+    margin-right: 0;
 }
 
 .site-footer .content-footer .headline {

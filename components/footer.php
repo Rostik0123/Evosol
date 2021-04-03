@@ -30,6 +30,12 @@
                 <p class="point"><a href="#">Задачи и цели</a></p>
                 <p class="point"><a href="#">Поддержать</a></p>
             </div>
+            <div class="support">
+                <p class="headline">Поддержка</p>
+                <p class="point"><a href="help.php">Помощь</a></p>
+                <p class="point"><a href="feedback.php">Обратная связь</a></p>
+                <p class="point"><a href="#">Реклама</a></p>
+            </div>
         </div>
         <div class="copyright">
             <p class="help"><a href="help.php">Помощь</a></p>

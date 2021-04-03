@@ -47,11 +47,11 @@
             ];
             ?>
 
-            <div class="news-other">
+            <div class="options-other">
                 <?php
                 for ($i = 0; $i < count($options); $i++):
                     ?>
-                    <div class="news-content">
+                    <div class="option-content">
 <!--                        <img src="--><?//= $options[$i]['image'] ?><!--" alt="Новость">-->
 <!--                        <div class="bg"></div>-->
                         <?= $options[$i]['image'] ?>
@@ -63,7 +63,7 @@
                 <?php endfor ?>
             </div>
 
-            <div class="news-month">
+            <div class="settings">
 <!--                <img src="img/month.jpg" alt="Новость">-->
 <!--                <div class="bg"></div>-->
                 <i class="fas fa-user-cog"></i>
