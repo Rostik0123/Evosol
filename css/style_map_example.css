@@ -45,13 +45,13 @@
     font-size: 0.75vw;
 }
 
-.order .title {
+.order .title{
     font-family: Source Sans Pro;
     font-style: italic;
     /* font-size: 24px;    */
-    font-size: 1.25vw;
+    font-size: 1.25vw;   
     /* margin-top: 15px;  */
-    margin-top: 1.4vh;
+    margin-top: 1.4vh; 
 }
 
 .order .colors {
@@ -170,7 +170,7 @@
     background-color: #6A6A6A;
 }
 
-.buttons .like .front {
+.buttons .like .front{
     position: absolute;
     /* width: 48px; */
     /* height: 48px; */
@@ -200,6 +200,12 @@
 
 /* -----------------------------------Slider--------------------- */
 
+.map {
+    background-color: #4A4A4A;
+    width: 63vw;
+    height: 61vh;
+}
+
 .slider {
     /* margin-left: 82px; */
     /* margin-right: 513px; */
@@ -210,7 +216,7 @@
 .description {
     /* margin-left: 82px; */
     /* margin-right: 513px; */
-    margin-left: 4.27vw;
+    /*margin-left: 4.27vw;*/
     margin-right: 26.72vw;
 }
 
@@ -339,11 +345,11 @@
     bottom: 0;
 }
 
-.feedback .latest .bg {
+.feedback .latest .bg{
     background-color: #000000;
 }
 
-.feedback .front {
+.feedback .front{
     /* transition: .3s; */
     position: absolute;
     z-index: 10;
@@ -356,7 +362,7 @@
     background-color: #ffffff;
 }
 
-.feedback .latest .front {
+.feedback .latest .front{
     /* transition: .3s; */
     position: absolute;
     z-index: 10;
@@ -438,7 +444,6 @@
     /* margin-right: 513px; */
     /* margin-top: 32px; */
     /* margin-bottom: 145px; */
-    /*margin: 3vh 26.72vw 13.43vw 19.64vw;*/
     margin: 3vh 26.72vw 5vh 19.64vw;
 }
 
@@ -484,6 +489,6 @@
     font-weight: normal;
     /* font-size: 16px; */
     font-size: 0.84vw;
-    color: #000000;
-    margin-top: 4px;
+    color: #000000;  
+    margin-top: 4px;  
 }

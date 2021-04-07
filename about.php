@@ -7,7 +7,7 @@
     <?php
     require_once('./components/links.php');
     ?>
-    <link rel="stylesheet" href="css/style_products.css">
+    <link rel="stylesheet" href="css/style_about.css">
 
 </head>
 <body>
@@ -19,9 +19,7 @@
 
     <!---------------------------------------Content------------------>
     <div class="content-content">
-        <?php
-        echo 'Контент не найден :(';
-        ?>
+        <h1>Страница находится в разработке:)</h1>
     </div>
     <!---------------------------------------Footer------------------->
     <?php

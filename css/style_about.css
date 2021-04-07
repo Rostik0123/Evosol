@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.content-content {
+    display: flex;
+    margin: 9.26vh 7.45vw 5.93vh;
+    /*----------ДОБАВИТЬ ПРИ АДАПТАЦИИ !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-----------*/
+    height: calc(100vh - 190px - 100px);
+    /*------------------------------*/
+}
+
+.content-content h1 {
+    font-family: Source Sans Pro;
+    font-style: italic;
+    width: 100%;
+    font-size: 1.45vw;
+    margin-top: 2.87vh;
+}
+
