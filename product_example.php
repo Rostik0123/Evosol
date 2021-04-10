@@ -28,6 +28,14 @@
     <!---------------------------------------Header------------------->
     <?php
     require_once('./components/header.php');
+
+    /**
+     * @var $productsData
+     */
+    require_once('./data/productsData.php');
+
+    $productId = (int)$_GET['product'] - 1;
+    $product = $productsData[$productId];
     ?>
 
     <!---------------------------------------Content------------------>
@@ -42,9 +50,9 @@
                 <i class="fas fa-star"></i>
             </div>
         </div>
-        <a class="title" href="#">МОДУЛЬ ОСВЕЩЁННОСТИ</a>
+        <a class="title" href="#"><?= strtoupper($product['title']) ?></a>
         <a class="colors" href="#">Серебристый / Черный / Жёлтый</a>
-        <a class="price" href="#">20 бел. руб.</a>
+        <a class="price" href="#"><?= $product['price'] ?></a>
         <div class="buttons">
             <div class="buy">
                 <div class="bg"></div>
@@ -97,12 +105,7 @@
             <p class="title">
                 Описание:
             </p>
-            <p class="text">
-                Данный прибор подойдёт Создан для измерения уровня освещённости в люксах. Данный прибор подойдёт
-                Создан для измерения уровня освещённости в люксах.Данный прибор подойдёт Создан для измерения уровня
-                освещённости в люксах. Данный прибор подойдёт Создан для измерения уровня освещённости в люксах.
-                Данный прибор подойдёт Создан для измерения уровня освещённости в люксах.
-            </p>
+            <p class="text"><?= $product['text'] ?></p>
             <p class="title">
                 Характеристики:
             </p>

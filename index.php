@@ -19,49 +19,35 @@
     <!---------------------------------------Header------------------->
     <?php
     require_once('./components/header.php');
+
+    /**
+     * @var $newsData
+     */
+    require_once('./data/newsData.php');
+    require_once('./functions/contentPusher.php');
+
     ?>
 
     <!---------------------------------------Content------------------>
     <div class="content-content">
 
-        <?php
-        $news = [
-            [
-                'title' => 'Новое:',
-                'image' => 'img/week.jpg',
-                'text' => 'В релиз вышло обновление нашего приложения 1.01'
-            ],
-            [
-                'title' => 'Новое:',
-                'image' => 'img/week.jpg',
-                'text' => 'Была выпущена новая образовательная статья (объясняем PHP).'
-            ],
-            [
-                'title' => 'Новость недели:',
-                'image' => 'img/week.jpg',
-                'text' => 'В релиз вышло обновление нашего приложения 1.01.'
-            ],
-            [
-                'title' => 'Статья недели:',
-                'image' => 'img/week.jpg',
-                'text' => 'Была выпущена новая образовательная статья (объясняем PHP).'
-            ]
-        ];
-        ?>
-
-
         <div class="news-other">
-            <?php
-            for ($i = 0; $i < count($news); $i++):
-                ?>
-                <div class="news-content">
-                    <img src="<?= $news[$i]['image'] ?>" alt="Новость">
-                    <div class="bg"></div>
-                    <a class="news-title"><?= $news[$i]['title'] ?></a>
-                    <a class="news-text"><?= $news[$i]['text'] ?></a>
-                    <div class="front"><a href="news_example.php"></a></div>
-                </div>
-            <?php endfor ?>
+            <?php foreach ($newsData as $key => $article) {
+                $article['key'] = $key + 1;
+                if ($article['class'] === 'index') {
+                    echo contentPusher($article, './templates/index-news.html.tpl');
+                }
+            } ?>
+            <!--            --><?php //foreach ($newsData as $key => $article): ?>
+            <!--                <div class="news-content">-->
+            <!--                    <img src="--><? //= $article['image'] ?><!--" alt="Новость">-->
+            <!--                    <div class="bg"></div>-->
+            <!--                    <a class="news-title">--><? //= $article['title'] ?><!--</a>-->
+            <!--                    <a class="news-text">--><? //= $article['text'] ?><!--</a>-->
+            <!--                    <div class="front"><a href="/news_example.php?-->
+            <? //= sprintf('article=%s', $key +1) ?><!--">Подробнее</a></div>-->
+            <!--                </div>-->
+            <!--            --><?php //endforeach; ?>
         </div>
 
         <div class="news-month">
@@ -69,7 +55,7 @@
             <div class="bg"></div>
             <a class="news-title">Новость месяца:</a>
             <a class="news-text">В продаже появился новый измерительный модуль (освещённости).</a>
-            <div class="front"><a href="news_example.php"></a></div>
+            <div class="front"><a href="news_article.php"></a></div>
         </div>
 
     </div>

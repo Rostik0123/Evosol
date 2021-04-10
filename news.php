@@ -17,49 +17,24 @@
         <!---------------------------------------Header------------------->
         <?php
         require_once('./components/header.php');
+
+        /**
+         * @var $newsData
+         */
+        require_once('./data/newsData.php');
+        require_once('./functions/contentPusher.php');
+
         ?>
         <!---------------------------------------Content------------------>
-        <?php
-        $news = [
-            [
-                'title' => 'Новости',
-                'time' => '10 часов назад',
-                'image' => 'img/month.jpg',
-                'description' => 'В продаже появился новый измерительный модуль освещённости',
-                'href' => 'news_example.php'
-            ],
-            [
-                'title' => 'Новости',
-                'time' => '10 часов назад',
-                'image' => 'img/month.jpg',
-                'description' => 'В продаже появился новый измерительный модуль освещённости',
-                'href' => 'news_example.php'
-            ],
-            [
-                'title' => 'Новости',
-                'time' => '10 часов назад',
-                'image' => 'img/month.jpg',
-                'description' => 'В продаже появился новый измерительный модуль освещённости',
-                'href' => 'news_example.php'
-            ]
-        ];
-        ?>
 
         <div class="content-content">
-            <?php
-            for ($i = 0; $i < count($news); $i++):
-            ?>
 
-            <div class="news">
-                <img src="<?= $news[$i]['image'] ?>">
-                <div class="bg"></div>
-                <div class="content-news">
-                    <p class="news-title"><?= $news[$i]['title'] ?> • <?= $news[$i]['time'] ?></p>
-                    <p class="news-description"><?= $news[$i]['description'] ?></p>
-                </div>
-                <div class="front"><a href="<?= $news[$i]['href'] ?>"></a></div>
-            </div>
-            <?php endfor ?>
+            <?php foreach ($newsData as $key => $article) {
+                $article['key'] = $key + 1;
+                if ($article['class'] === 'news') {
+                    echo contentPusher($article, './templates/news.html.tpl');
+                }
+            } ?>
 
         </div>
 
