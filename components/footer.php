@@ -32,9 +32,9 @@
             </div>
             <div class="support">
                 <p class="headline">Поддержка</p>
-                <p class="point"><a href="help.php">Помощь</a></p>
+                <p class="point"><a href="registration.php">Помощь</a></p>
                 <p class="point"><a href="feedback.php">Обратная связь</a></p>
-                <p class="point"><a href="#">Реклама</a></p>
+                <p class="point"><a href="authorization.php">Реклама</a></p>
             </div>
         </div>
         <div class="copyright">

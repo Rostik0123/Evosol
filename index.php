@@ -18,6 +18,7 @@
 <section class="container-body">
     <!---------------------------------------Header------------------->
     <?php
+
     require_once('./components/header.php');
 
     /**
@@ -50,6 +51,17 @@
             <!--            --><?php //endforeach; ?>
         </div>
 
+        <?php
+        $connect = mysqli_connect('localhost', 'root', '', 'evosol');
+        $query = mysqli_query(
+                $connect,
+                'SELECT `news`.* FROM `news`
+                        WHERE is_index NOT NULL'
+        );
+        $result = mysqli_fetch_all($query, MYSQLI_ASSOC);
+        var_dump($result);
+
+        ?>
         <div class="news-month">
             <img src="img/month.jpg" alt="Новость">
             <div class="bg"></div>

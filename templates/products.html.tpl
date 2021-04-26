@@ -4,5 +4,5 @@
     <a class="product-title">{{title}}</a>
     <a class="product-price">{{price}}</a>
     <a class="product-description">{{description}}</a>
-    <div class="front"><a href="/product_example.php?product={{key}}"></a></div>
+    <div class="front"><a href="/product_page.php?product={{key}}"></a></div>
 </div>
