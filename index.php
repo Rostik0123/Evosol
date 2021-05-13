@@ -25,7 +25,7 @@
      * @var $newsData
      */
     require_once('./data/newsData.php');
-    require_once('./functions/contentPusher.php');
+    require_once('./services/contentPusher.php');
 
     ?>
 

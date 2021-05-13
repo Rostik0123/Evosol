@@ -1,3 +1,10 @@
+<?php
+    if (empty($_SESSION['user'])) {
+    header('Location: /authorization.php');
+    exit();
+}
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 

@@ -22,7 +22,7 @@
      * @var $productsData
      */
     require_once('./data/productsData.php');
-    require_once('./functions/contentPusher.php');
+    require_once('./services/contentPusher.php');
 
     ?>
 

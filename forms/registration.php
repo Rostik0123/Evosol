@@ -27,7 +27,7 @@ function encryption($password): string
     return md5(sprintf('%s%s%s', $hash1, $password, $hash2));
 }
 
-function save($data)
+function save(array $data, array $roles)
 {
     $connect = mysqli_connect('localhost', 'root', '', 'evosol');
     $stmt = mysqli_prepare($connect, 'INSERT INTO `user` (`login`, `password`, `email`, `role`) VALUES (?, ?, ?, ?)');
@@ -35,7 +35,7 @@ function save($data)
     $login = $data['login'];
     $password = $data['password'];
     $email = $data['email'];
-    $role = 'role';
+    $role = serialize($roles);
 
     mysqli_stmt_bind_param($stmt, "ssss", $login, $password, $email, $role);
     mysqli_stmt_execute($stmt);
@@ -51,5 +51,5 @@ if (!$error['success']) {
 
 $data['password'] = encryption($data['password']);
 unset($data['passwordRepeat']);
-save($data);
+save($data, ['ROLE_ADMINISTRATOR']);
 

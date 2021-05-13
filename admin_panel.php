@@ -1,14 +1,25 @@
+<?php
+
+require_once('./services/security/authorization.php');
+require_once('./services/security/hasRole.php');
+
+if (!hasRole('ROLE_MODERATOR')) {
+//    header('Location: /authorization.php');
+//    exit();
+}
+
+?>
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <title>Evosol | Новости | Новый измерительный модуль освещенности появился в продаже</title>
+    <title>Evosol | Наши продукты</title>
 
     <?php
     require_once('./components/links.php');
     ?>
-    <link rel="stylesheet" href="css/style_news_example.css">
+    <link rel="stylesheet" href="css/style_personal_cabinet.css">
 
 </head>
 
@@ -17,25 +28,13 @@
     <!---------------------------------------Header------------------->
     <?php
     require_once('./components/header.php');
-
-    /**
-     * @var $newsData
-     */
-    require_once('./data/newsData.php');
-    require_once('./services/contentPusher.php');
-
-    $newsId = (int)$_GET['article'] - 1;
-    $article = $newsData[$newsId];
     ?>
+
     <!---------------------------------------Content------------------>
     <div class="content-content">
 
-        <?php
-        $article['key'] = $newsId;
-        echo contentPusher($article, './templates/news_article.html.tpl');
-        ?>
-
     </div>
+
     <!---------------------------------------Footer------------------->
     <?php
     require_once('./components/footer.php');

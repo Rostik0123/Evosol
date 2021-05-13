@@ -1,5 +1,5 @@
 <?php
-require_once('./functions/encryption.php');
+require_once('./services/encryption.php');
 
 $data = $_POST['authorization'];
 
@@ -22,6 +22,7 @@ function validation(array $data): array
 function AuthorizationByPassword($data, $user)
 {
     if ($data['password'] === $user['password']) {
+        $user['role'] = unserialize($user['role']);
         $_SESSION['user'] = $user;
         header('Location: /personal_cabinet.php');
         exit();
