@@ -1,7 +1,7 @@
 <?php
 
 
-namespace App\Services;
+namespace App\Services\Database;
 
 
 use PDO;
@@ -11,6 +11,10 @@ class DBConnector
 
     private $connection;
     private $request = [];
+    private static $instance;
+    public static $servername;
+    public static $username;
+    public static $password;
 
     /**
      * DBConnector constructor.
@@ -18,13 +22,23 @@ class DBConnector
      * @param $username
      * @param $password
      */
-    public function __construct($servername, $username, $password)
+    private function __construct($servername, $username, $password)
     {
+
         $this->connection = new PDO('mysql:host=localhost;dbname=' . $servername, $username, $password);
         if (!$this->connection) {
             die("Connection failed: ");
         }
 
+    }
+
+    public static function getInstance(): self
+    {
+        if (!self::$instance) {
+            self::$instance = new self(self::$servername, self::$username, self::$password);
+        }
+
+        return self::$instance;
     }
 
     /**
@@ -148,8 +162,7 @@ class DBConnector
     /**
      * DESTRUCT!!!!!!!!!!
      */
-    public
-    function __destruct()
+    public function __destruct()
     {
 //        $this->connection;
 
@@ -162,10 +175,15 @@ $condition = [
     'login' => ['test'],
 ];
 
-$dbConnect = new DBConnector('evosol', 'root', '');
+//DBConnector::$servername = 'evosol';
+//DBConnector::$username = 'root';
+//DBConnector::$password = '';
+//$dbConnect = DBConnector::getInstance();
 
-var_dump($dbConnect->select()
-    ->from('news')
-//    ->where('id = :id', ['id' => 2])
-//    ->limit(1)
-    ->all());
+//$dbConnect = new DBConnector('evosol', 'root', '');
+//
+//var_dump($dbConnect->select()
+//    ->from('news')
+////    ->where('id = :id', ['id' => 2])
+////    ->limit(1)
+//    ->all());

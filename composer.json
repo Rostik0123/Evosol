@@ -1,0 +1,18 @@
+{
+  "name": "Evosol",
+  "description": "Powered by Evosol",
+  "minimum-stability": "stable",
+  "type": "project",
+  "license": "FPP",
+  "autoload": {
+    "psr-4":{
+      "app\\": "services/"
+    }
+  },
+  "authors": [
+    {
+      "name": "Rostik",
+      "email": "email@example.com"
+    }
+  ]
+}
